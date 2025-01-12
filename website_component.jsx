@@ -29,7 +29,7 @@ const products = [
     price: 149,
     description: 'אגרטל מודפס תלת מימד באיכות גבוהה, מושלם לסלון או למרפסת',
     image: '/api/placeholder/300/400',
-    stock: 5
+    stock: 1
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const products = [
     price: 89,
     description: 'אגרטל קומפקטי ומעוצב, אידיאלי לשולחן העבודה או המטבח',
     image: '/api/placeholder/300/400',
-    stock: 2
+    stock: 1
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const products = [
     price: 69,
     description: 'מעמד מינימליסטי ואלגנטי לשעון החכם שלך',
     image: '/api/placeholder/300/400',
-    stock: 8
+    stock: 2
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ const products = [
     price: 39,
     description: 'פתרון חכם לניהול כבלים בשולחן העבודה',
     image: '/api/placeholder/300/400',
-    stock: 0
+    stock: 1
   }
 ];
 
@@ -96,7 +96,7 @@ const Madpis3D = () => {
   };
 
   const handleCheckout = () => {
-    const paypalUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=YOUR_PAYPAL_EMAIL&amount=${getTotalPrice()}&currency_code=ILS`;
+    const paypalUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=madpis3d@gmail.com&amount=${getTotalPrice()}&currency_code=ILS`;
     window.open(paypalUrl, '_blank');
   };
 
